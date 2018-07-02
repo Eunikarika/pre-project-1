@@ -1,15 +1,15 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #222;
 }
 /* Link Styles */
 
@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/cdo-bridge.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -67,39 +67,43 @@ header {
 }
 header .profile-image {
   margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  border: 3px solid pink;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.1) rotate(360deg);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
+  background-color: #222;
+  color: #00bfff;
   padding: 10px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
+
 .location {
   background-color: #222;
   color: yellow;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
+  background:  #fdebd0;
+  border: 3px dashed #4a235a;
   border-radius: 6px;
   transition: all .5s;
 }
 .card:hover {
   border-color: #ff99ff;
+  transform: scale(1.1);
 }
 
 ul.skills {
@@ -169,10 +173,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -203,5 +207,14 @@ a.social:hover {
     margin: 40px auto;
   }
 
-}
+  .title{
+    color: black;
+    background-color:  #fdebd0;
+    text-align: center;
+    border: 3px solid black;
+    border-radius:10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
+}
